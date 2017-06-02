@@ -55,14 +55,14 @@ public class SwitchMenus: MonoBehaviour
 
     public void PauseMenutoMainMenu()
     {
-        //Application.LoadLevel("MainMenu");
+        Application.LoadLevel("Scene.1_Menus");
         mainCanvas.enabled = true;
         pauseCanvas.enabled = false;
     }
 
     public void PlayGame()
     {
-        //Application.LoadLevel("ActualGame");
+        Application.LoadLevel("Scene.2_Test");
         mainCanvas.enabled = false;
     }
 }
