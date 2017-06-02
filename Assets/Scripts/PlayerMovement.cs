@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour {
 
     public float PropForce = 10;
     public float MaxSpeed = 15;
-    public float TurningForce = 10; //This is multiplied by the current speed
+    public float TurningForce = 10000; //This is multiplied by the current speed
 
     private float CurrentSpeed;
     private Rigidbody body;
@@ -26,9 +26,8 @@ public class PlayerMovement : MonoBehaviour {
         vinput = Input.GetAxis("Vertical");
         hinput = Input.GetAxis("Horizontal");
         dirRadian = transform.rotation.eulerAngles.y / 180 * Mathf.PI;
-        body.AddRelativeForce(Input.GetAxis("Horizontal") * body.velocity.magnitude / MaxSpeed, 0, (vinput * PropForce + Mathf.Abs(hinput * TurningForce / 2) ) );
-        body.AddTorque(0, Input.GetAxis("Horizontal") * body.velocity.magnitude / MaxSpeed, 0);
-        Vector3 SteeredVelocity = new Vector3(Mathf.Sin(dirRadian), 0, Mathf.Cos(dirRadian));
-        //body.velocity = /*body.velocity +*/ SteeredVelocity * body.velocity.magnitude;
-	}
+        body.AddRelativeForce(Input.GetAxis("Horizontal") * body.velocity.magnitude / MaxSpeed, 0, (vinput * PropForce + Mathf.Abs(hinput + body.angularVelocity.magnitude) ) );
+        body.AddTorque(0, (Input.GetAxis("Horizontal") * body.velocity.magnitude) / TurningForce, 0);
+        body.AddRelativeTorque(Input.GetAxis("Lift"), 0, 0);
+    }
 }
