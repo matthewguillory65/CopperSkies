@@ -1,0 +1,195 @@
+fileFormatVersion: 2
+guid: 9b60d3f91dfbab94fa4487271e24240a
+timeCreated: 1496933013
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: FrontCog_Lg
+    100004: FrontCog_Sm
+    100006: HelmWheel
+    100008: L_CannonBarrel
+    100010: L_CannonBase
+    100012: L_Cog_Lg
+    100014: L_Cog_Sm
+    100016: L_Propeller1
+    100018: L_Propeller2
+    100020: PropellerRear1
+    100022: PropellorRear2
+    100024: R_CannonBarrel
+    100026: R_CannonBase
+    100028: R_Cog_Lg
+    100030: R_Cog_Sm
+    100032: R_Propeller1
+    100034: R_Propeller2
+    100036: RearCog_Lg
+    100038: RearCog_Mdm
+    100040: RearCog_Sm
+    100042: RearEngine
+    100044: Rudder
+    100046: ShipBase
+    400000: //RootNode
+    400002: FrontCog_Lg
+    400004: FrontCog_Sm
+    400006: HelmWheel
+    400008: L_CannonBarrel
+    400010: L_CannonBase
+    400012: L_Cog_Lg
+    400014: L_Cog_Sm
+    400016: L_Propeller1
+    400018: L_Propeller2
+    400020: PropellerRear1
+    400022: PropellorRear2
+    400024: R_CannonBarrel
+    400026: R_CannonBase
+    400028: R_Cog_Lg
+    400030: R_Cog_Sm
+    400032: R_Propeller1
+    400034: R_Propeller2
+    400036: RearCog_Lg
+    400038: RearCog_Mdm
+    400040: RearCog_Sm
+    400042: RearEngine
+    400044: Rudder
+    400046: ShipBase
+    2300000: FrontCog_Lg
+    2300002: FrontCog_Sm
+    2300004: HelmWheel
+    2300006: L_CannonBarrel
+    2300008: L_CannonBase
+    2300010: L_Cog_Lg
+    2300012: L_Cog_Sm
+    2300014: L_Propeller1
+    2300016: L_Propeller2
+    2300018: PropellerRear1
+    2300020: PropellorRear2
+    2300022: R_CannonBarrel
+    2300024: R_CannonBase
+    2300026: R_Cog_Lg
+    2300028: R_Cog_Sm
+    2300030: R_Propeller1
+    2300032: R_Propeller2
+    2300034: RearCog_Lg
+    2300036: RearCog_Mdm
+    2300038: RearCog_Sm
+    2300040: RearEngine
+    2300042: Rudder
+    2300044: ShipBase
+    3300000: FrontCog_Lg
+    3300002: FrontCog_Sm
+    3300004: HelmWheel
+    3300006: L_CannonBarrel
+    3300008: L_CannonBase
+    3300010: L_Cog_Lg
+    3300012: L_Cog_Sm
+    3300014: L_Propeller1
+    3300016: L_Propeller2
+    3300018: PropellerRear1
+    3300020: PropellorRear2
+    3300022: R_CannonBarrel
+    3300024: R_CannonBase
+    3300026: R_Cog_Lg
+    3300028: R_Cog_Sm
+    3300030: R_Propeller1
+    3300032: R_Propeller2
+    3300034: RearCog_Lg
+    3300036: RearCog_Mdm
+    3300038: RearCog_Sm
+    3300040: RearEngine
+    3300042: Rudder
+    3300044: ShipBase
+    4300000: PropellorRear2
+    4300002: PropellerRear1
+    4300004: Rudder
+    4300006: HelmWheel
+    4300008: L_Cog_Sm
+    4300010: L_Cog_Lg
+    4300012: L_Propeller1
+    4300014: L_Propeller2
+    4300016: R_Propeller1
+    4300018: R_Propeller2
+    4300020: RearEngine
+    4300022: RearCog_Lg
+    4300024: RearCog_Sm
+    4300026: RearCog_Mdm
+    4300028: R_Cog_Sm
+    4300030: R_Cog_Lg
+    4300032: FrontCog_Lg
+    4300034: FrontCog_Sm
+    4300036: ShipBase
+    4300038: L_CannonBase
+    4300040: L_CannonBarrel
+    4300042: R_CannonBase
+    4300044: R_CannonBarrel
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
