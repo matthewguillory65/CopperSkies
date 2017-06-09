@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 96d874ee4c524f145bf72e2b2d2e51f2
-timeCreated: 1497027943
+guid: dc56215f98a599047abf8a6d6f2efe27
+timeCreated: 1497028775
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -113,10 +113,52 @@ ModelImporter:
     400102: SteamshipRig_ROOTSHJnt
     400104: SteamshipRig_Rudder_Joint_AuxSHJnt
     400106: SteamshipRig_Steeringwheel_AuxSHJnt
-    2300000: RearEngine
-    2300002: ShipBase
-    3300000: RearEngine
-    3300002: ShipBase
+    2300000: FrontCog_Lg
+    2300002: FrontCog_Sm
+    2300004: HelmWheel
+    2300006: L_CannonBarrel
+    2300008: L_CannonBase
+    2300010: L_Cog_Lg
+    2300012: L_Cog_Sm
+    2300014: L_Propeller1
+    2300016: L_Propeller2
+    2300018: PropellerRear1
+    2300020: PropellorRear2
+    2300022: R_CannonBarrel
+    2300024: R_CannonBase
+    2300026: R_Cog_Lg
+    2300028: R_Cog_Sm
+    2300030: R_Propeller1
+    2300032: R_Propeller2
+    2300034: RearCog_Lg
+    2300036: RearCog_Mdm
+    2300038: RearCog_Sm
+    2300040: RearEngine
+    2300042: Rudder
+    2300044: ShipBase
+    3300000: FrontCog_Lg
+    3300002: FrontCog_Sm
+    3300004: HelmWheel
+    3300006: L_CannonBarrel
+    3300008: L_CannonBase
+    3300010: L_Cog_Lg
+    3300012: L_Cog_Sm
+    3300014: L_Propeller1
+    3300016: L_Propeller2
+    3300018: PropellerRear1
+    3300020: PropellorRear2
+    3300022: R_CannonBarrel
+    3300024: R_CannonBase
+    3300026: R_Cog_Lg
+    3300028: R_Cog_Sm
+    3300030: R_Propeller1
+    3300032: R_Propeller2
+    3300034: RearCog_Lg
+    3300036: RearCog_Mdm
+    3300038: RearCog_Sm
+    3300040: RearEngine
+    3300042: Rudder
+    3300044: ShipBase
     4300000: PropellorRear2
     4300002: PropellerRear1
     4300004: Rudder
@@ -141,27 +183,6 @@ ModelImporter:
     4300042: R_CannonBase
     4300044: R_CannonBarrel
     9500000: //RootNode
-    13700000: FrontCog_Lg
-    13700002: FrontCog_Sm
-    13700004: HelmWheel
-    13700006: L_CannonBarrel
-    13700008: L_CannonBase
-    13700010: L_Cog_Lg
-    13700012: L_Cog_Sm
-    13700014: L_Propeller1
-    13700016: L_Propeller2
-    13700018: PropellerRear1
-    13700020: PropellorRear2
-    13700022: R_CannonBarrel
-    13700024: R_CannonBase
-    13700026: R_Cog_Lg
-    13700028: R_Cog_Sm
-    13700030: R_Propeller1
-    13700032: R_Propeller2
-    13700034: RearCog_Lg
-    13700036: RearCog_Mdm
-    13700038: RearCog_Sm
-    13700040: Rudder
   materials:
     importMaterials: 0
     materialName: 0
