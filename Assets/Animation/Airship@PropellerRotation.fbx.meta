@@ -1,0 +1,241 @@
+fileFormatVersion: 2
+guid: e1ccf3c1ae731b5459b182bf7a68c789
+timeCreated: 1497041390
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Cannons
+    100004: Cogs
+    100006: FrontCog_Lg
+    100008: FrontCog_Sm
+    100010: HelmWheel
+    100012: L_CannonBarrel
+    100014: L_CannonBase
+    100016: L_Cog_Lg
+    100018: L_Cog_Sm
+    100020: L_Propeller1
+    100022: L_Propeller2
+    100024: PropellerRear1
+    100026: Propellers
+    100028: PropellorRear2
+    100030: R_CannonBarrel
+    100032: R_CannonBase
+    100034: R_Cog_Lg
+    100036: R_Cog_Sm
+    100038: R_Propeller1
+    100040: R_Propeller2
+    100042: RearCog_Lg
+    100044: RearCog_Mdm
+    100046: RearCog_Sm
+    100048: RearEngine
+    100050: Rudder
+    100052: ShipBase
+    100054: SteamShip_002
+    100056: SteamshipRig_Balloon_Large_AuxSHJnt
+    100058: SteamshipRig_Balloon_Small_AuxSHJnt
+    100060: SteamshipRig_BalloonRope_AuxSHJnt
+    100062: SteamshipRig_DeckCog_Large_AuxSHJnt
+    100064: SteamshipRig_DeckCog_Small_AuxSHJnt
+    100066: SteamshipRig_DeckEngine_AuxSHJnt
+    100068: SteamshipRig_EngineRear_AuxSHJnt
+    100070: SteamshipRig_L_CogLarge_AuxSHJnt
+    100072: SteamshipRig_L_CogSmall_AuxSHJnt
+    100074: SteamshipRig_L_TurretBase_AuxSHJnt
+    100076: SteamshipRig_L_TurretCannon_AuxSHJnt
+    100078: SteamshipRig_L_Wing_AuxSHJnt
+    100080: SteamshipRig_Propeller1_L_AuxSHJnt
+    100082: SteamshipRig_Propeller1_R_AuxSHJnt
+    100084: SteamshipRig_Propeller2_L_AuxSHJnt
+    100086: SteamshipRig_Propeller2_R_AuxSHJnt
+    100088: SteamshipRig_PropellerRear_1_AuxSHJnt
+    100090: SteamshipRig_PropellerRear_2_AuxSHJnt
+    100092: SteamshipRig_R_CogLarge_AuxSHJnt
+    100094: SteamshipRig_R_CogSmall_AuxSHJnt
+    100096: SteamshipRig_R_TurretBase_AuxSHJnt
+    100098: SteamshipRig_R_TurretConnon_AuxSHJnt
+    100100: SteamshipRig_R_Wing_AuxSHJnt
+    100102: SteamshipRig_Rear_CogLarge_AuxSHJnt
+    100104: SteamshipRig_Rear_CogMedium_AuxSHJnt
+    100106: SteamshipRig_Rear_CogSmall_AuxSHJnt
+    100108: SteamshipRig_ROOTSHJnt
+    100110: SteamshipRig_Rudder_Joint_AuxSHJnt
+    100112: SteamshipRig_Steeringwheel_AuxSHJnt
+    400000: //RootNode
+    400002: Cannons
+    400004: Cogs
+    400006: FrontCog_Lg
+    400008: FrontCog_Sm
+    400010: HelmWheel
+    400012: L_CannonBarrel
+    400014: L_CannonBase
+    400016: L_Cog_Lg
+    400018: L_Cog_Sm
+    400020: L_Propeller1
+    400022: L_Propeller2
+    400024: PropellerRear1
+    400026: Propellers
+    400028: PropellorRear2
+    400030: R_CannonBarrel
+    400032: R_CannonBase
+    400034: R_Cog_Lg
+    400036: R_Cog_Sm
+    400038: R_Propeller1
+    400040: R_Propeller2
+    400042: RearCog_Lg
+    400044: RearCog_Mdm
+    400046: RearCog_Sm
+    400048: RearEngine
+    400050: Rudder
+    400052: ShipBase
+    400054: SteamShip_002
+    400056: SteamshipRig_Balloon_Large_AuxSHJnt
+    400058: SteamshipRig_Balloon_Small_AuxSHJnt
+    400060: SteamshipRig_BalloonRope_AuxSHJnt
+    400062: SteamshipRig_DeckCog_Large_AuxSHJnt
+    400064: SteamshipRig_DeckCog_Small_AuxSHJnt
+    400066: SteamshipRig_DeckEngine_AuxSHJnt
+    400068: SteamshipRig_EngineRear_AuxSHJnt
+    400070: SteamshipRig_L_CogLarge_AuxSHJnt
+    400072: SteamshipRig_L_CogSmall_AuxSHJnt
+    400074: SteamshipRig_L_TurretBase_AuxSHJnt
+    400076: SteamshipRig_L_TurretCannon_AuxSHJnt
+    400078: SteamshipRig_L_Wing_AuxSHJnt
+    400080: SteamshipRig_Propeller1_L_AuxSHJnt
+    400082: SteamshipRig_Propeller1_R_AuxSHJnt
+    400084: SteamshipRig_Propeller2_L_AuxSHJnt
+    400086: SteamshipRig_Propeller2_R_AuxSHJnt
+    400088: SteamshipRig_PropellerRear_1_AuxSHJnt
+    400090: SteamshipRig_PropellerRear_2_AuxSHJnt
+    400092: SteamshipRig_R_CogLarge_AuxSHJnt
+    400094: SteamshipRig_R_CogSmall_AuxSHJnt
+    400096: SteamshipRig_R_TurretBase_AuxSHJnt
+    400098: SteamshipRig_R_TurretConnon_AuxSHJnt
+    400100: SteamshipRig_R_Wing_AuxSHJnt
+    400102: SteamshipRig_Rear_CogLarge_AuxSHJnt
+    400104: SteamshipRig_Rear_CogMedium_AuxSHJnt
+    400106: SteamshipRig_Rear_CogSmall_AuxSHJnt
+    400108: SteamshipRig_ROOTSHJnt
+    400110: SteamshipRig_Rudder_Joint_AuxSHJnt
+    400112: SteamshipRig_Steeringwheel_AuxSHJnt
+    2300000: RearEngine
+    2300002: ShipBase
+    3300000: RearEngine
+    3300002: ShipBase
+    4300000: Rudder
+    4300002: HelmWheel
+    4300004: RearEngine
+    4300006: ShipBase
+    4300008: PropellorRear2
+    4300010: PropellerRear1
+    4300012: L_Propeller1
+    4300014: L_Propeller2
+    4300016: R_Propeller1
+    4300018: R_Propeller2
+    4300020: R_CannonBarrel
+    4300022: R_CannonBase
+    4300024: L_CannonBarrel
+    4300026: L_CannonBase
+    4300028: FrontCog_Sm
+    4300030: FrontCog_Lg
+    4300032: R_Cog_Lg
+    4300034: R_Cog_Sm
+    4300036: RearCog_Mdm
+    4300038: RearCog_Sm
+    4300040: RearCog_Lg
+    4300042: L_Cog_Lg
+    4300044: L_Cog_Sm
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: FrontCog_Lg
+    13700002: FrontCog_Sm
+    13700004: HelmWheel
+    13700006: L_CannonBarrel
+    13700008: L_CannonBase
+    13700010: L_Cog_Lg
+    13700012: L_Cog_Sm
+    13700014: L_Propeller1
+    13700016: L_Propeller2
+    13700018: PropellerRear1
+    13700020: PropellorRear2
+    13700022: R_CannonBarrel
+    13700024: R_CannonBase
+    13700026: R_Cog_Lg
+    13700028: R_Cog_Sm
+    13700030: R_Propeller1
+    13700032: R_Propeller2
+    13700034: RearCog_Lg
+    13700036: RearCog_Mdm
+    13700038: RearCog_Sm
+    13700040: Rudder
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
