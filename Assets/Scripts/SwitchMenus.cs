@@ -63,7 +63,7 @@ public class SwitchMenus: MonoBehaviour
 
     public void PauseMenutoMainMenu()
     {
-        Application.LoadLevel("Scene.1_Menus");
+        SceneManager.LoadScene("Scene.1_Menus");
         mainCanvas.enabled = true;
         pauseCanvas.enabled = false;
     }
