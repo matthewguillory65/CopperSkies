@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour {
     public float PropForce = 10;
     public float MaxSpeed = 15;
     public float TurningForce = 10000; //This is multiplied by the current speed
+    public int UpgradeNumber = 1;
 
     private float CurrentSpeed;
     private Rigidbody body;
@@ -26,7 +27,10 @@ public class PlayerMovement : MonoBehaviour {
         vinput = Input.GetAxis("Vertical");
         hinput = Input.GetAxis("Horizontal");
         dirRadian = transform.rotation.eulerAngles.y / 180 * Mathf.PI;
-        body.AddRelativeForce(Input.GetAxis("Horizontal") * body.velocity.magnitude / MaxSpeed, Input.GetAxis("Lift") * 3, (vinput * PropForce + Mathf.Abs(hinput + body.angularVelocity.magnitude) ) );
-        body.AddTorque(0, (Input.GetAxis("Horizontal") * body.velocity.magnitude) / TurningForce, 0);
+        body.AddRelativeForce(Input.GetAxis("Horizontal") * body.velocity.magnitude / MaxSpeed * UpgradeNumber, Input.GetAxis("Lift") * 3, (vinput * PropForce + Mathf.Abs(hinput + body.angularVelocity.magnitude) ) * UpgradeNumber);
+        body.AddRelativeTorque(0, (Input.GetAxis("Horizontal") * body.velocity.magnitude) / TurningForce, 0);
+        if (body.position.y < 10)
+            body.AddRelativeForce(0, 5, 0);
+                
     }
 }
