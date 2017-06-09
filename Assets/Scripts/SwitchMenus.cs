@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SwitchMenus: MonoBehaviour
 {
@@ -10,6 +11,13 @@ public class SwitchMenus: MonoBehaviour
     public Canvas controlsCanvas;
     public Canvas pauseCanvas;
     public Canvas pause_OptionCanvas;
+
+    private AssetBundle myLoadedAssetBundle;
+
+    public void Start()
+    {
+        //myLoadedAssetBundle = AssetBundle.LoadFromFile("Assets/AssetBundles/scenes");
+    }
 
 
     public void CanvastoOptions()
@@ -62,7 +70,7 @@ public class SwitchMenus: MonoBehaviour
 
     public void PlayGame()
     {
-        Application.LoadLevel("Scene.2_Test");
+        SceneManager.LoadScene("01.Game");
         mainCanvas.enabled = false;
     }
 }
