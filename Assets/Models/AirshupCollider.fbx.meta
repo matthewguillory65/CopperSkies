@@ -1,0 +1,136 @@
+fileFormatVersion: 2
+guid: eab29c8861952e4418e672af95b272f3
+timeCreated: 1497036806
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: B_Engine
+    100004: Balloons
+    100006: Cannons
+    100008: Engines
+    100010: Helm
+    100012: Hull
+    100014: L_Cannon
+    100016: L_Engine
+    100018: M_Engine
+    100020: R_Cannon
+    100022: R_Engine
+    100024: Rudder
+    100026: Steering
+    400000: //RootNode
+    400002: B_Engine
+    400004: Balloons
+    400006: Cannons
+    400008: Engines
+    400010: Helm
+    400012: Hull
+    400014: L_Cannon
+    400016: L_Engine
+    400018: M_Engine
+    400020: R_Cannon
+    400022: R_Engine
+    400024: Rudder
+    400026: Steering
+    2300000: B_Engine
+    2300002: Balloons
+    2300004: Helm
+    2300006: Hull
+    2300008: L_Cannon
+    2300010: L_Engine
+    2300012: M_Engine
+    2300014: R_Cannon
+    2300016: R_Engine
+    2300018: Rudder
+    3300000: B_Engine
+    3300002: Balloons
+    3300004: Helm
+    3300006: Hull
+    3300008: L_Cannon
+    3300010: L_Engine
+    3300012: M_Engine
+    3300014: R_Cannon
+    3300016: R_Engine
+    3300018: Rudder
+    4300000: R_Cannon
+    4300002: L_Cannon
+    4300004: L_Engine
+    4300006: B_Engine
+    4300008: M_Engine
+    4300010: R_Engine
+    4300012: Hull
+    4300014: Balloons
+    4300016: Helm
+    4300018: Rudder
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

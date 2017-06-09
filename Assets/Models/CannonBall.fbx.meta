@@ -1,68 +1,15 @@
 fileFormatVersion: 2
-guid: acffacf11e1b538449b0e164eb7bbf8d
-timeCreated: 1497020288
+guid: 7ed0d0a8e152bbe4988d5e35f1ec5565
+timeCreated: 1497036805
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
     100000: //RootNode
-    100002: B_Engine
-    100004: Balloons
-    100006: Cannons
-    100008: Engines
-    100010: Helm
-    100012: Hull
-    100014: L_Cannon
-    100016: L_Engine
-    100018: M_Engine
-    100020: R_Cannon
-    100022: R_Engine
-    100024: Rudder
-    100026: Steering
     400000: //RootNode
-    400002: B_Engine
-    400004: Balloons
-    400006: Cannons
-    400008: Engines
-    400010: Helm
-    400012: Hull
-    400014: L_Cannon
-    400016: L_Engine
-    400018: M_Engine
-    400020: R_Cannon
-    400022: R_Engine
-    400024: Rudder
-    400026: Steering
-    2300000: B_Engine
-    2300002: Balloons
-    2300004: Helm
-    2300006: Hull
-    2300008: L_Cannon
-    2300010: L_Engine
-    2300012: M_Engine
-    2300014: R_Cannon
-    2300016: R_Engine
-    2300018: Rudder
-    3300000: B_Engine
-    3300002: Balloons
-    3300004: Helm
-    3300006: Hull
-    3300008: L_Cannon
-    3300010: L_Engine
-    3300012: M_Engine
-    3300014: R_Cannon
-    3300016: R_Engine
-    3300018: Rudder
-    4300000: R_Cannon
-    4300002: L_Cannon
-    4300004: L_Engine
-    4300006: B_Engine
-    4300008: M_Engine
-    4300010: R_Engine
-    4300012: Hull
-    4300014: Balloons
-    4300016: Helm
-    4300018: Rudder
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: pCube1
     9500000: //RootNode
   materials:
     importMaterials: 1
