@@ -5,44 +5,74 @@ using UnityEngine;
 public class PropellerController : MonoBehaviour {
 
     public GameObject LProp1;
-    public GameObject RProp1;
     public GameObject LProp2;
+    public GameObject LProp2Obj;
+    public GameObject RProp1;
     public GameObject RProp2;
+    public GameObject RProp2Obj;
+    public GameObject MProp1;
+    public GameObject MProp1Obj;
+    public GameObject MProp2;
+    public GameObject MProp2Obj;
     public float RunningSpinRate;
 
     private Rigidbody body;
 
-    private PlayerMovement shipstuff;
+    private PlayerMovement shipstats;
 
 	// Use this for initialization
 	void Start ()
     {
         body = GetComponent<Rigidbody>();
-        shipstuff = GetComponent<PlayerMovement>();
+        shipstats = GetComponent<PlayerMovement>();
 	}
-	
-	// Update is called once per frame
-	void Update ()
+
+    // Update is called once per frame
+    void Update()
     {
-        LProp1.transform.Rotate(0, 0, (-RunningSpinRate + -body.velocity.magnitude) / 2);
-        RProp1.transform.Rotate(0, 0, (RunningSpinRate + body.velocity.magnitude) / 2);
-        LProp2.transform.Rotate(0, 0, (RunningSpinRate + body.velocity.magnitude) / 2);
-        RProp2.transform.Rotate(0, 0, (-RunningSpinRate + -body.velocity.magnitude) / 2);
+        RotateProps();
     }
+
 
     public void UpdateUpgrade()
     {
-        switch(shipstuff.UpgradeNumber)
+        switch(shipstats.UpgradeNumber)
         {
             case 1:
-                RProp2.SetActive(false);
-                LProp2.SetActive(false);
+
                 break;
             case 2:
-                RProp2.SetActive(true);
-                LProp2.SetActive(true);
                 break;
             case 3:
+                break;
+            default:
+                break;
+        }
+    }
+
+    void RotateProps()
+    {
+        switch (shipstats.UpgradeNumber) //Adjust rotations based on upgrade number
+        {
+            case 1:
+                LProp1.transform.Rotate(0, 0, (-RunningSpinRate + -body.velocity.magnitude) / 2);
+                LProp2.transform.Rotate(0, 0, (RunningSpinRate + body.velocity.magnitude) / 2);
+                RProp1.transform.Rotate(0, 0, (RunningSpinRate + body.velocity.magnitude) / 2);
+                RProp2.transform.Rotate(0, 0, (-RunningSpinRate + -body.velocity.magnitude) / 2);
+                break;
+            case 2:
+                LProp1.transform.Rotate(0, 0, (-RunningSpinRate + -body.velocity.magnitude) / 2);
+                LProp2.transform.Rotate(0, 0, (RunningSpinRate + body.velocity.magnitude) / 2);
+                RProp1.transform.Rotate(0, 0, (-RunningSpinRate + -body.velocity.magnitude) / 2);
+                RProp2.transform.Rotate(0, 0, (RunningSpinRate + body.velocity.magnitude) / 2);
+                break;
+            case 3:
+                LProp1.transform.Rotate(0, 0, (-RunningSpinRate + -body.velocity.magnitude) / 2);
+                LProp2.transform.Rotate(0, 0, (RunningSpinRate + body.velocity.magnitude) / 2);
+                RProp1.transform.Rotate(0, 0, (-RunningSpinRate + -body.velocity.magnitude) / 2);
+                RProp2.transform.Rotate(0, 0, (RunningSpinRate + body.velocity.magnitude) / 2);
+                MProp1.transform.Rotate(0, 0, (-RunningSpinRate + -body.velocity.magnitude) / 2);
+                MProp2.transform.Rotate(0, 0, (RunningSpinRate + body.velocity.magnitude) / 2);
                 break;
             default:
                 break;
