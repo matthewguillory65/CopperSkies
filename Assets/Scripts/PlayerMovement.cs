@@ -25,13 +25,30 @@ public class PlayerMovement : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
+        Move();
+        Level();
+    }
+
+    void Move()
+    {
         vinput = Input.GetAxis("Vertical");
         hinput = Input.GetAxis("Horizontal");
-        movevec = new Vector3(hinput * body.velocity.magnitude / MaxSpeed * UpgradeNumber, Input.GetAxis("Lift") * 3, (vinput * PropForce + Mathf.Abs(hinput + body.angularVelocity.magnitude)) * UpgradeNumber);
+        transform.rotation = new Quaternion(0,transform.rotation.y, 0, transform.rotation.w);
+        movevec = new Vector3(hinput * body.velocity.magnitude / MaxSpeed * UpgradeNumber, Input.GetAxis("Lift") * 5, (vinput * PropForce + Mathf.Abs(hinput + body.angularVelocity.magnitude)) * UpgradeNumber);
         turnvec = new Vector3(0, (hinput * body.velocity.magnitude) / TurningForce, 0);
         body.AddRelativeForce(movevec);
         body.AddRelativeTorque(turnvec);
         if (body.position.y < 10)
-            body.AddRelativeForce(0, 5, 0);
+            body.AddForce(0, 5, 0);
+        else if (body.position.y > 160)
+            body.AddForce(0, -5, 0);
     }
+
+    void Level()
+    {
+        if(body.rotation.eulerAngles.x != 0)
+        {
+        }
+    }
+
 }
