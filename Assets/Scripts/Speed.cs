@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class Speed : MonoBehaviour
 {
     public float currentSpeed;
+    float maxSpeed = 15.0f;
     public Text text;
 
 	// Use this for initialization

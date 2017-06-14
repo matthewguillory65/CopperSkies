@@ -22,7 +22,7 @@ public class SwitchingCanvas : MonoBehaviour {
 
     public void changeCanvasProperty()
     {
-        myCanvas.gameObject.SetActive(!myCanvas.gameObject.activeSelf);
-        nextCanvas.gameObject.SetActive(!nextCanvas.gameObject.activeSelf);
+        myCanvas.gameObject.active = !myCanvas.gameObject.active;
+        nextCanvas.gameObject.active = !nextCanvas.gameObject.active;
     }
 }
