@@ -42,8 +42,12 @@ public class PropellerController : MonoBehaviour {
 
                 break;
             case 2:
+                LProp2Obj.SetActive(true);
+                RProp2Obj.SetActive(true);
                 break;
             case 3:
+                MProp1Obj.SetActive(true);
+                MProp2Obj.SetActive(true);
                 break;
             default:
                 break;
