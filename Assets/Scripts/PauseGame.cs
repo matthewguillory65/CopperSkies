@@ -21,9 +21,18 @@ public class PauseGame : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Pause();
+            
             Debug.Log("Im working");
         }
-    }
+	    if (PauseCanvas.enabled == true)
+	    {
+	        Time.timeScale = 0;
+	    }
+	    else
+	    {
+	        Time.timeScale = 1;
+	    }
+	}
 
     public void PauseToOptions()
     {
