@@ -72,7 +72,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1042051607666786
 GameObject:
   m_ObjectHideFlags: 1
@@ -803,7 +803,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1593598528802424
 GameObject:
   m_ObjectHideFlags: 1
@@ -883,7 +883,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1651661159464588
 GameObject:
   m_ObjectHideFlags: 1
@@ -915,7 +915,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1660657712652786
 GameObject:
   m_ObjectHideFlags: 1
@@ -3308,16 +3308,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44aebe4727e43914d936249f09753571, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LProp1: {fileID: 0}
-  LProp2: {fileID: 0}
-  LProp2Obj: {fileID: 0}
-  RProp1: {fileID: 0}
-  RProp2: {fileID: 0}
-  RProp2Obj: {fileID: 0}
-  MProp1: {fileID: 0}
-  MProp1Obj: {fileID: 0}
-  MProp2: {fileID: 0}
-  MProp2Obj: {fileID: 0}
+  LProp1: {fileID: 1693098716078536}
+  LProp2: {fileID: 1298268097338394}
+  LProp2Obj: {fileID: 1581147354352934}
+  RProp1: {fileID: 1078352776836868}
+  RProp2: {fileID: 1394765831483232}
+  RProp2Obj: {fileID: 1643019438509618}
+  MProp1: {fileID: 1503213550808492}
+  MProp1Obj: {fileID: 1035774623536192}
+  MProp2: {fileID: 1237978069425154}
+  MProp2Obj: {fileID: 1652814310095516}
   RunningSpinRate: 8.5
 --- !u!135 &135511015593060970
 SphereCollider:
