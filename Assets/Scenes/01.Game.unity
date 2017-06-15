@@ -208,7 +208,7 @@ Skybox:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 64789532}
   m_Enabled: 1
-  m_CustomSkybox: {fileID: 2100000, guid: bbe5e356a359cf44388ab49e187bb4ce, type: 2}
+  m_CustomSkybox: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
 --- !u!114 &64789539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -417,7 +417,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1844198031
+  randomSeed: 321576575
   InitialModule:
     serializedVersion: 3
     enabled: 1
