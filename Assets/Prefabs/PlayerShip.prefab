@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 124185716340564362}
   - component: {fileID: 92771627642909938}
   - component: {fileID: 81062225970142070}
+  - component: {fileID: 114121083000766738}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -527,6 +528,7 @@ GameObject:
   - component: {fileID: 124371121193552204}
   - component: {fileID: 92526441216796956}
   - component: {fileID: 81522974638619488}
+  - component: {fileID: 114236788506505198}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -736,6 +738,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4050346037150072}
+  - component: {fileID: 114664812710538516}
   m_Layer: 0
   m_Name: SteamshipRig_R_TurretBase_AuxSHJnt
   m_TagString: Untagged
@@ -803,6 +806,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4729035884954654}
+  - component: {fileID: 114236133902152992}
   m_Layer: 0
   m_Name: SteamshipRig_L_TurretCannon_AuxSHJnt
   m_TagString: Untagged
@@ -1029,6 +1033,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4083693445390300}
+  - component: {fileID: 114574570986757544}
   m_Layer: 0
   m_Name: SteamshipRig_R_TurretConnon_AuxSHJnt
   m_TagString: Untagged
@@ -1202,6 +1207,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4518977139101192}
+  - component: {fileID: 114474592104888220}
   m_Layer: 0
   m_Name: SteamshipRig_L_TurretBase_AuxSHJnt
   m_TagString: Untagged
@@ -1315,6 +1321,7 @@ GameObject:
   - component: {fileID: 114608229122344054}
   - component: {fileID: 82029541413091142}
   - component: {fileID: 114856484434253730}
+  - component: {fileID: 114803767876716392}
   m_Layer: 0
   m_Name: PlayerShip
   m_TagString: Untagged
@@ -3316,14 +3323,14 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1003383498768950}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!81 &81522974638619488
 AudioListener:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1322450331317838}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!82 &82029541413091142
 AudioSource:
   m_ObjectHideFlags: 1
@@ -3435,6 +3442,75 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114121083000766738
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1003383498768950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  profile: {fileID: 11400000, guid: 5fa15875c01901c44948a4956c2695a1, type: 2}
+--- !u!114 &114236133902152992
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1556037896140396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d15ceb6dbd7d1bb46a5a9a721dae31cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CannonBallPrefab: {fileID: 1248836803069234, guid: d07fb8800c9ca5641958f505be5ea0fc,
+    type: 2}
+  force: -2000
+  timeTillShootAgain: 5
+--- !u!114 &114236788506505198
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1322450331317838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  profile: {fileID: 11400000, guid: 5fa15875c01901c44948a4956c2695a1, type: 2}
+--- !u!114 &114474592104888220
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1850773324447746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b9a67b606e89af4189a81287e97ff44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Base: {fileID: 1850773324447746}
+  Main: {fileID: 1556037896140396}
+  Camera: {fileID: 1003383498768950}
+  invertOrNot: 1
+--- !u!114 &114574570986757544
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1712725883590016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d15ceb6dbd7d1bb46a5a9a721dae31cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CannonBallPrefab: {fileID: 1248836803069234, guid: d07fb8800c9ca5641958f505be5ea0fc,
+    type: 2}
+  force: 2000
+  timeTillShootAgain: 5
 --- !u!114 &114608229122344054
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3463,6 +3539,37 @@ MonoBehaviour:
   MaxSpeed: 15
   TurningForce: 5
   UpgradeNumber: 1
+--- !u!114 &114664812710538516
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1490384680922420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b9a67b606e89af4189a81287e97ff44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Base: {fileID: 1490384680922420}
+  Main: {fileID: 1712725883590016}
+  Camera: {fileID: 1322450331317838}
+  invertOrNot: -1
+--- !u!114 &114803767876716392
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1998176021066420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eed7adca5dcaa5148957e54e483eefc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LookSensitivity: 2
+  MaxX: 0
+  MaxY: 0
+  L: {fileID: 114474592104888220}
+  R: {fileID: 114664812710538516}
 --- !u!114 &114856484434253730
 MonoBehaviour:
   m_ObjectHideFlags: 1
