@@ -18,6 +18,5 @@ public class ShipSound : MonoBehaviour {
 	void Update () {
         SteamSound.pitch = 0.75f + body.velocity.magnitude / 15;
         SteamSound.volume = 0.5f + body.velocity.magnitude / 30;
-        Steam.emissionRate = 40 + body.velocity.magnitude;
     }
 }
