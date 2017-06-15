@@ -1,7 +1,7 @@
 fileFormatVersion: 2
-guid: e9a4ec7160153164889525525e9bb424
-timeCreated: 1497041390
-licenseType: Free
+guid: b86cb8a474eabcb488c193812dc3f899
+timeCreated: 1497560996
+licenseType: Pro
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
@@ -140,6 +140,7 @@ ModelImporter:
     4300040: L_CannonBarrel
     4300042: R_CannonBase
     4300044: R_CannonBarrel
+    7400000: CogRotation1
     9500000: //RootNode
     13700000: FrontCog_Lg
     13700002: FrontCog_Sm
@@ -184,7 +185,143 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: CogRotation1
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 72
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: SteamShip_002
+        weight: 1
+      - path: SteamShip_002/FrontCog_Lg
+        weight: 1
+      - path: SteamShip_002/FrontCog_Sm
+        weight: 1
+      - path: SteamShip_002/HelmWheel
+        weight: 1
+      - path: SteamShip_002/L_CannonBarrel
+        weight: 1
+      - path: SteamShip_002/L_CannonBase
+        weight: 1
+      - path: SteamShip_002/L_Cog_Lg
+        weight: 1
+      - path: SteamShip_002/L_Cog_Sm
+        weight: 1
+      - path: SteamShip_002/L_Propeller1
+        weight: 1
+      - path: SteamShip_002/L_Propeller2
+        weight: 1
+      - path: SteamShip_002/PropellerRear1
+        weight: 1
+      - path: SteamShip_002/PropellorRear2
+        weight: 1
+      - path: SteamShip_002/R_CannonBarrel
+        weight: 1
+      - path: SteamShip_002/R_CannonBase
+        weight: 1
+      - path: SteamShip_002/R_Cog_Lg
+        weight: 1
+      - path: SteamShip_002/R_Cog_Sm
+        weight: 1
+      - path: SteamShip_002/R_Propeller1
+        weight: 1
+      - path: SteamShip_002/R_Propeller2
+        weight: 1
+      - path: SteamShip_002/RearCog_Lg
+        weight: 1
+      - path: SteamShip_002/RearCog_Mdm
+        weight: 1
+      - path: SteamShip_002/RearCog_Sm
+        weight: 1
+      - path: SteamShip_002/RearEngine
+        weight: 1
+      - path: SteamShip_002/Rudder
+        weight: 1
+      - path: SteamShip_002/ShipBase
+        weight: 1
+      - path: SteamshipRig_ROOTSHJnt
+        weight: 1
+      - path: SteamshipRig_ROOTSHJnt/SteamshipRig_BalloonRope_AuxSHJnt
+        weight: 1
+      - path: SteamshipRig_ROOTSHJnt/SteamshipRig_BalloonRope_AuxSHJnt/SteamshipRig_Balloon_Large_AuxSHJnt
+        weight: 1
+      - path: SteamshipRig_ROOTSHJnt/SteamshipRig_BalloonRope_AuxSHJnt/SteamshipRig_Balloon_Small_AuxSHJnt
+        weight: 1
+      - path: SteamshipRig_ROOTSHJnt/SteamshipRig_DeckEngine_AuxSHJnt
+        weight: 1
+      - path: SteamshipRig_ROOTSHJnt/SteamshipRig_DeckEngine_AuxSHJnt/SteamshipRig_DeckCog_Large_AuxSHJnt
+        weight: 1
+      - path: SteamshipRig_ROOTSHJnt/SteamshipRig_DeckEngine_AuxSHJnt/SteamshipRig_DeckCog_Small_AuxSHJnt
+        weight: 1
+      - path: SteamshipRig_ROOTSHJnt/SteamshipRig_EngineRear_AuxSHJnt
+        weight: 1
+      - path: SteamshipRig_ROOTSHJnt/SteamshipRig_EngineRear_AuxSHJnt/SteamshipRig_PropellerRear_1_AuxSHJnt
+        weight: 1
+      - path: SteamshipRig_ROOTSHJnt/SteamshipRig_EngineRear_AuxSHJnt/SteamshipRig_PropellerRear_2_AuxSHJnt
+        weight: 1
+      - path: SteamshipRig_ROOTSHJnt/SteamshipRig_EngineRear_AuxSHJnt/SteamshipRig_Rear_CogLarge_AuxSHJnt
+        weight: 1
+      - path: SteamshipRig_ROOTSHJnt/SteamshipRig_EngineRear_AuxSHJnt/SteamshipRig_Rear_CogMedium_AuxSHJnt
+        weight: 1
+      - path: SteamshipRig_ROOTSHJnt/SteamshipRig_EngineRear_AuxSHJnt/SteamshipRig_Rear_CogSmall_AuxSHJnt
+        weight: 1
+      - path: SteamshipRig_ROOTSHJnt/SteamshipRig_L_TurretBase_AuxSHJnt
+        weight: 1
+      - path: SteamshipRig_ROOTSHJnt/SteamshipRig_L_TurretBase_AuxSHJnt/SteamshipRig_L_TurretCannon_AuxSHJnt
+        weight: 1
+      - path: SteamshipRig_ROOTSHJnt/SteamshipRig_L_Wing_AuxSHJnt
+        weight: 1
+      - path: SteamshipRig_ROOTSHJnt/SteamshipRig_L_Wing_AuxSHJnt/SteamshipRig_L_CogLarge_AuxSHJnt
+        weight: 1
+      - path: SteamshipRig_ROOTSHJnt/SteamshipRig_L_Wing_AuxSHJnt/SteamshipRig_L_CogSmall_AuxSHJnt
+        weight: 1
+      - path: SteamshipRig_ROOTSHJnt/SteamshipRig_L_Wing_AuxSHJnt/SteamshipRig_Propeller1_L_AuxSHJnt
+        weight: 1
+      - path: SteamshipRig_ROOTSHJnt/SteamshipRig_L_Wing_AuxSHJnt/SteamshipRig_Propeller2_L_AuxSHJnt
+        weight: 1
+      - path: SteamshipRig_ROOTSHJnt/SteamshipRig_R_TurretBase_AuxSHJnt
+        weight: 1
+      - path: SteamshipRig_ROOTSHJnt/SteamshipRig_R_TurretBase_AuxSHJnt/SteamshipRig_R_TurretConnon_AuxSHJnt
+        weight: 1
+      - path: SteamshipRig_ROOTSHJnt/SteamshipRig_R_Wing_AuxSHJnt
+        weight: 1
+      - path: SteamshipRig_ROOTSHJnt/SteamshipRig_R_Wing_AuxSHJnt/SteamshipRig_Propeller1_R_AuxSHJnt
+        weight: 1
+      - path: SteamshipRig_ROOTSHJnt/SteamshipRig_R_Wing_AuxSHJnt/SteamshipRig_Propeller2_R_AuxSHJnt
+        weight: 1
+      - path: SteamshipRig_ROOTSHJnt/SteamshipRig_R_Wing_AuxSHJnt/SteamshipRig_R_CogLarge_AuxSHJnt
+        weight: 1
+      - path: SteamshipRig_ROOTSHJnt/SteamshipRig_R_Wing_AuxSHJnt/SteamshipRig_R_CogSmall_AuxSHJnt
+        weight: 1
+      - path: SteamshipRig_ROOTSHJnt/SteamshipRig_Rudder_Joint_AuxSHJnt
+        weight: 1
+      - path: SteamshipRig_ROOTSHJnt/SteamshipRig_Steeringwheel_AuxSHJnt
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -208,7 +345,7 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
   importAnimation: 1
-  copyAvatar: 1
+  copyAvatar: 0
   humanDescription:
     serializedVersion: 2
     human: []
@@ -225,8 +362,7 @@ ModelImporter:
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 478893d62ec541d44a329c3010bae34c,
-    type: 3}
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
   humanoidOversampling: 1
   additionalBone: 0

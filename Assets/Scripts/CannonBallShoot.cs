@@ -8,6 +8,9 @@ public class CannonBallShoot : MonoBehaviour
     public GameObject CannonBallPrefab;
     public float force = 2500;
     public float timeTillShootAgain = 5;
+    public GameObject camera;
+
+    public Rigidbody ship;
 
     public void Start()
     {
@@ -22,10 +25,10 @@ public class CannonBallShoot : MonoBehaviour
     {
         while (true)
         {
-            if (Input.GetKey(KeyCode.Space))
+            if (Input.GetKey(KeyCode.Space) && camera.activeSelf)
             {
                 GameObject cannonball = Instantiate(CannonBallPrefab, gameObject.transform);
-                cannonball.GetComponent<Rigidbody>().AddRelativeForce(force, 0, 0);
+                cannonball.GetComponent<Rigidbody>().AddRelativeForce( new Vector3(force, 0, 0));
                 cannonball.transform.parent = null;
                 yield return new WaitForSeconds(timeTillShootAgain);
             }
