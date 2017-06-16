@@ -31,9 +31,5 @@ public class CameraFollow : MonoBehaviour
             transform.LookAt(new Vector3(ObjectToFollow.position.x, ObjectToFollow.position.y + Height, ObjectToFollow.position.z));
             //GetComponent<Rigidbody>().angularVelocity = ObjectToFollow.rotation.eulerAngles / 180 * Mathf.PI - GetComponent<Rigidbody>().rotation.eulerAngles / 180 * Mathf.PI;
         }
-        else
-        {
-            GetComponent<Rigidbody>().velocity = new Vector3(0,0,0);
-        }
     }
 }
