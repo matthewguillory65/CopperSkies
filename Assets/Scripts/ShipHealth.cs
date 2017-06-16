@@ -7,6 +7,7 @@ public class ShipHealth : MonoBehaviour {
     public int Health = 100;
     public ParticleSystem DieParticles;
     public ParticleSystem HurtParticles;
+    public GameObject Drop;
 
 	// Use this for initialization
 	void Start ()
@@ -37,6 +38,8 @@ public class ShipHealth : MonoBehaviour {
         DieParticles.transform.parent = null;
         DieParticles.Play();
         Destroy(this.gameObject);
+        GameObject droppy = Instantiate(Drop, transform);
+        droppy.transform.parent = null;
     }
 
     void OnCollisionEnter(Collision other)

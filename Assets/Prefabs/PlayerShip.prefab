@@ -3804,6 +3804,7 @@ MonoBehaviour:
   Health: 100
   DieParticles: {fileID: 198897858229987708}
   HurtParticles: {fileID: 198872629232568416}
+  Drop: {fileID: 1399967090765234, guid: aa00719ace11b20428c15fda83c64afb, type: 2}
 --- !u!114 &114236788506505198
 MonoBehaviour:
   m_ObjectHideFlags: 1
