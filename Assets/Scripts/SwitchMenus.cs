@@ -70,7 +70,7 @@ public class SwitchMenus: MonoBehaviour
 
     public void PlayGame()
     {
-        SceneManager.LoadScene("01.Game");
+        SceneManager.LoadScene("02.Game");
         mainCanvas.enabled = false;
     }
 }
