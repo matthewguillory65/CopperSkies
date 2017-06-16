@@ -33,7 +33,8 @@ public class PlayerMovement : MonoBehaviour {
     {
         vinput = Input.GetAxis("Vertical");
         hinput = Input.GetAxis("Horizontal");
-        movevec = new Vector3(hinput * body.velocity.magnitude / MaxSpeed * UpgradeNumber, Input.GetAxis("Lift") * 3, (vinput * PropForce + Mathf.Abs(hinput + body.angularVelocity.magnitude)) * UpgradeNumber);
+        transform.rotation = new Quaternion(0,transform.rotation.y, 0, transform.rotation.w);
+        movevec = new Vector3(hinput * body.velocity.magnitude / MaxSpeed * UpgradeNumber, Input.GetAxis("Lift") * 5, (vinput * PropForce + Mathf.Abs(hinput + body.angularVelocity.magnitude)) * UpgradeNumber);
         turnvec = new Vector3(0, (hinput * body.velocity.magnitude) / TurningForce, 0);
         body.AddRelativeForce(movevec);
         body.AddRelativeTorque(turnvec);
