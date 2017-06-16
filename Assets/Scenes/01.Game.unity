@@ -208,7 +208,7 @@ Skybox:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 64789532}
   m_Enabled: 1
-  m_CustomSkybox: {fileID: 2100000, guid: bbe5e356a359cf44388ab49e187bb4ce, type: 2}
+  m_CustomSkybox: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
 --- !u!114 &64789539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -292,6 +292,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4bf97d6e4ebae3b44b8007072479959b, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &712470940 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4396714752973778, guid: 4bf97d6e4ebae3b44b8007072479959b,
+    type: 2}
+  m_PrefabInternal: {fileID: 73195907}
 --- !u!1 &1097515089
 GameObject:
   m_ObjectHideFlags: 0
@@ -323,8 +328,8 @@ ParticleSystemRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 0}
+  - {fileID: 2100000, guid: ced25fe4f334d4649aa82e19efd0eb6b, type: 2}
+  - {fileID: 2100000, guid: ced25fe4f334d4649aa82e19efd0eb6b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -417,7 +422,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1844198031
+  randomSeed: -1715591827
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -3419,7 +3424,7 @@ Transform:
 Rigidbody:
   m_PrefabParentObject: {fileID: 54436026882716166, guid: 6c5dac940083a0444a8b2c3c3bdfc9e5,
     type: 2}
-  m_PrefabInternal: {fileID: 1429943275}
+  m_PrefabInternal: {fileID: 1458729864}
 --- !u!1 &1206853241
 GameObject:
   m_ObjectHideFlags: 0
@@ -3545,7 +3550,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -900850108
+  randomSeed: 1188195207
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -6543,7 +6548,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1429943275
+--- !u!1001 &1458729864
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -6582,6 +6587,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 198897858229987708, guid: 6c5dac940083a0444a8b2c3c3bdfc9e5,
+        type: 2}
+      propertyPath: CollisionModule.plane0
+      value: 
+      objectReference: {fileID: 712470940}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6c5dac940083a0444a8b2c3c3bdfc9e5, type: 2}
   m_IsPrefabParent: 0

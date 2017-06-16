@@ -59,24 +59,24 @@ public class PropellerController : MonoBehaviour {
         switch (shipstats.UpgradeNumber) //Adjust rotations based on upgrade number
         {
             case 1:
-                LProp1.transform.Rotate(0, 0, (-RunningSpinRate + -body.velocity.magnitude) / 2);
-                LProp2.transform.Rotate(0, 0, (RunningSpinRate + body.velocity.magnitude) / 2);
-                RProp1.transform.Rotate(0, 0, (RunningSpinRate + body.velocity.magnitude) / 2);
-                RProp2.transform.Rotate(0, 0, (-RunningSpinRate + -body.velocity.magnitude) / 2);
+                LProp1.transform.Rotate(0, 0, (-RunningSpinRate + -body.velocity.magnitude) * Time.deltaTime * 30);
+                LProp2.transform.Rotate(0, 0, (RunningSpinRate + body.velocity.magnitude) * Time.deltaTime * 30);
+                RProp1.transform.Rotate(0, 0, (RunningSpinRate + body.velocity.magnitude) * Time.deltaTime * 30);
+                RProp2.transform.Rotate(0, 0, (-RunningSpinRate + -body.velocity.magnitude) * Time.deltaTime * 30);
                 break;
             case 2:
-                LProp1.transform.Rotate(0, 0, (-RunningSpinRate + -body.velocity.magnitude) / 2);
-                LProp2.transform.Rotate(0, 0, (RunningSpinRate + body.velocity.magnitude) / 2);
-                RProp1.transform.Rotate(0, 0, (-RunningSpinRate + -body.velocity.magnitude) / 2);
-                RProp2.transform.Rotate(0, 0, (RunningSpinRate + body.velocity.magnitude) / 2);
+                LProp1.transform.Rotate(0, 0, (-RunningSpinRate + -body.velocity.magnitude) * Time.deltaTime * 30);
+                LProp2.transform.Rotate(0, 0, (RunningSpinRate + body.velocity.magnitude) * Time.deltaTime * 30);
+                RProp1.transform.Rotate(0, 0, (-RunningSpinRate + -body.velocity.magnitude) * Time.deltaTime * 30);
+                RProp2.transform.Rotate(0, 0, (RunningSpinRate + body.velocity.magnitude) * Time.deltaTime * 30);
                 break;
             case 3:
-                LProp1.transform.Rotate(0, 0, (-RunningSpinRate + -body.velocity.magnitude) / 2);
-                LProp2.transform.Rotate(0, 0, (RunningSpinRate + body.velocity.magnitude) / 2);
-                RProp1.transform.Rotate(0, 0, (-RunningSpinRate + -body.velocity.magnitude) / 2);
-                RProp2.transform.Rotate(0, 0, (RunningSpinRate + body.velocity.magnitude) / 2);
-                MProp1.transform.Rotate(0, 0, (-RunningSpinRate + -body.velocity.magnitude) / 2);
-                MProp2.transform.Rotate(0, 0, (RunningSpinRate + body.velocity.magnitude) / 2);
+                LProp1.transform.Rotate(0, 0, (-RunningSpinRate + -body.velocity.magnitude) * Time.deltaTime * 30);
+                LProp2.transform.Rotate(0, 0, (RunningSpinRate + body.velocity.magnitude) * Time.deltaTime * 30);
+                RProp1.transform.Rotate(0, 0, (-RunningSpinRate + -body.velocity.magnitude) * Time.deltaTime * 30);
+                RProp2.transform.Rotate(0, 0, (RunningSpinRate + body.velocity.magnitude) * Time.deltaTime * 30);
+                MProp1.transform.Rotate(0, 0, (-RunningSpinRate + -body.velocity.magnitude) * Time.deltaTime * 30);
+                MProp2.transform.Rotate(0, 0, (RunningSpinRate + body.velocity.magnitude) * Time.deltaTime * 30);
                 break;
             default:
                 break;

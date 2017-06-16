@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 
-public class PlayerMovement : MonoBehaviour {
+public class PlayerMovement : NetworkBehaviour {
 
     public float PropForce = 10;
     public float MaxSpeed = 15;
@@ -25,8 +26,11 @@ public class PlayerMovement : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-        Move();
-        Level();
+        if (isLocalPlayer)
+        {
+            Move();
+            Level();
+        }
     }
 
     void Move()
@@ -34,8 +38,10 @@ public class PlayerMovement : MonoBehaviour {
         vinput = Input.GetAxis("Vertical");
         hinput = Input.GetAxis("Horizontal");
         transform.rotation = new Quaternion(0,transform.rotation.y, 0, transform.rotation.w);
-        movevec = new Vector3(hinput * body.velocity.magnitude / MaxSpeed * UpgradeNumber, Input.GetAxis("Lift") * 5, (vinput * PropForce + Mathf.Abs(hinput + body.angularVelocity.magnitude)) * UpgradeNumber);
-        turnvec = new Vector3(0, (hinput * body.velocity.magnitude) / TurningForce, 0);
+        movevec = new Vector3(hinput * body.velocity.magnitude / MaxSpeed * UpgradeNumber,
+            Input.GetAxis("Lift") * 5 * Time.deltaTime * 30,
+            (vinput * PropForce + Mathf.Abs(hinput + body.angularVelocity.magnitude)) * UpgradeNumber * Time.deltaTime * 30);
+        turnvec = new Vector3(0, (hinput * body.velocity.magnitude) / TurningForce * Time.deltaTime * 60, 0);
         body.AddRelativeForce(movevec);
         body.AddRelativeTorque(turnvec);
         if (body.position.y < 10)
