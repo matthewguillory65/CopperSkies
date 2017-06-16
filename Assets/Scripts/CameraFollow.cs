@@ -21,7 +21,8 @@ public class CameraFollow : MonoBehaviour
         if (!ObjectToFollow)
         {
             GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
-            ObjectToFollow = GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody>();
+            if(GameObject.FindGameObjectWithTag("Player"))
+                ObjectToFollow = GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody>();
         }
 
         if (ObjectToFollow)

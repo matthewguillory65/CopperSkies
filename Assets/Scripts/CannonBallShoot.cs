@@ -1,39 +1,47 @@
 using System.Collections;
 using System.Collections.Generic;
-using NUnit.Framework.Constraints;
 using UnityEngine;
+using UnityEngine.Networking;
 
-public class CannonBallShoot : MonoBehaviour
+public class CannonBallShoot : NetworkBehaviour
 {
+    public Transform ShootPosition;
     public GameObject CannonBallPrefab;
     public float force = 2500;
     public float timeTillShootAgain = 5;
     public GameObject camera;
+    public AudioSource Sound;
 
+    bool CanFire = true;
     public Rigidbody ship;
 
     public void Start()
     {
-        StartCoroutine(Shoot());
+            
     }
     public void Update()
     {
-        
-    }
-
-    IEnumerator Shoot()
-    {
-        while (true)
-        {
-            if (Input.GetKey(KeyCode.Space) && camera.activeSelf)
+        if(isLocalPlayer)
+            if (Input.GetKey(KeyCode.Space) && camera.activeSelf && CanFire)
             {
-                GameObject cannonball = Instantiate(CannonBallPrefab, gameObject.transform);
-                cannonball.GetComponent<Rigidbody>().AddRelativeForce( new Vector3(force, 0, 0));
-                cannonball.transform.parent = null;
-                yield return new WaitForSeconds(timeTillShootAgain);
+                CmdShoot();
+                StartCoroutine(ShootCooldown());
             }
-            yield return new WaitForSeconds(0.01f);
-        }
     }
 
+    [Command]
+    void CmdShoot()
+    {
+        Sound.Play();
+        GameObject cannonball = Instantiate(CannonBallPrefab, ShootPosition);
+        cannonball.GetComponent<Rigidbody>().AddRelativeForce( new Vector3(force, 0, 0));
+        cannonball.transform.parent = null;
+    }
+
+    IEnumerator ShootCooldown()
+    {
+        CanFire = false;
+        yield return new WaitForSeconds(timeTillShootAgain);
+        CanFire = true;
+    }
 }
