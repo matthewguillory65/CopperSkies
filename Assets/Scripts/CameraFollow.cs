@@ -18,6 +18,12 @@ public class CameraFollow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!ObjectToFollow)
+        {
+            GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
+            ObjectToFollow = GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody>();
+        }
+
         if (ObjectToFollow)
         {
             Vector3 BehindPos = new Vector3(Mathf.Sin(ObjectToFollow.rotation.eulerAngles.y / 180 * Mathf.PI) * Distance + ObjectToFollow.position.x, Height + ObjectToFollow.position.y, Mathf.Cos(ObjectToFollow.rotation.eulerAngles.y / 180 * Mathf.PI) * Distance + ObjectToFollow.position.z);
